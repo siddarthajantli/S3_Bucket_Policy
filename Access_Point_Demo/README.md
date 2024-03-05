@@ -1,4 +1,6 @@
 **Access Point Creation.**
+
+
 Deligating the restricted access to respective S3 bucket folders, to the IAM users / roles, via _S3 Access Point_.
 
 Login to AWS Console.
