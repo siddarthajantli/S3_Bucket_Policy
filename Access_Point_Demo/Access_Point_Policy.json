@@ -1,0 +1,19 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Statement1",
+            "Effect": "Allow",
+			"Principal": {
+                "AWS": "arn:aws:iam::<Account_ID>:user/dataur1"
+            },
+			"Action": [
+                "s3:GetObejct",
+                "s3:PutObject"
+            ],
+            "Resource":[
+                "arn:aws:s3:us-east-1:<Account_ID>:accesspoint/datauser-ap-demo-1/object/datausr1/*"
+            ]
+		}
+	]
+}
