@@ -4,19 +4,19 @@
 		{
 			"Sid": "S3-AP-Demo",
 			"Effect": "Allow",
-            "Principal": {
-                "AWS": "*"
-            },
+            		"Principal": {
+                		"AWS": "*"
+            		},
 			"Action": "*",
 			"Resource": [
-                "arn:aws:s3:::terraform-state-sidd-lab",
-                "arn:aws:s3:::terraform-state-sidd-lab/*"
-            ],
-            "Condition": {
-                "StringEquals": {
-                "s3:DataAccessPointAccount": "<Account_ID>"
-                }
-            }
+                		"arn:aws:s3:::terraform-state-sidd-lab",
+                		"arn:aws:s3:::terraform-state-sidd-lab/*"
+            		],
+            		"Condition": {
+                		"StringEquals": {
+                			"s3:DataAccessPointAccount": "<Account_ID>"
+                		}
+            		}
 		}
 	]
 }
